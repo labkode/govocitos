@@ -27,4 +27,10 @@ Browse to `localhost:8080/detepre/` or to your `$DOCKER_HOST:8080/detepre` to re
 
 You should be able to see the login panel:
 
-[Login Panel](login-panel.png)
+![Login Panel](login-panel.png)
+
+Log into the service using the following credentials:
+
+- Guest account: `guest:guest`
+- Operator account: `operator:???`
+- Admin account: `admin:???`
