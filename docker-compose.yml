@@ -1,0 +1,21 @@
+---
+  govocitos-web: 
+    container_name: "govocitos-web"
+    build: "./govocitos-web"
+    ports: 
+      - "8080:8080"
+    volumes: 
+      - "/tmp:/tmp"
+    links:
+      - "govocitos-mysql:govocitos-mysql"
+
+  govocitos-mysql: 
+    container_name: "govocitos-mysql"
+    build: "govocitos-mysql"
+    ports: 
+      - "3306:3306"
+    environment: 
+      MYSQL_USER: "detepre"
+      MYSQL_PASSWORD: "detepre"
+      STARTUP_SQL: "/root/schema.sql"
+

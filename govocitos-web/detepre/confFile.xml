@@ -1,0 +1,2252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataBase Name="detepre">
+  <Table Name="campanhas" visible="YES" addNew="YES" consult="YES" modify="YES" delete="YES" visibleName="Surveys">
+    <Description></Description>
+    <FKinfo>Not Used</FKinfo>
+    <Field Name="codigo_campanha" isPK="YES" isFK="NO" fkTable="None" isNullable="NO" isAutoinc="NO" length="20" pos="1" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Survey code</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>20</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>0</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="descripcion" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="255" pos="2" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Description</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>255</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>1</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+  </Table>
+  <Table Name="clases" visible="YES" addNew="NO" consult="YES" modify="NO" delete="NO" visibleName="Classes">
+    <Description></Description>
+    <FKinfo>Not Used</FKinfo>
+    <Field Name="codigo_clase" isPK="YES" isFK="NO" fkTable="None" isNullable="NO" isAutoinc="NO" length="4" pos="1" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Class code</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>4</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>0</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="nombre" isPK="NO" isFK="NO" fkTable="None" isNullable="NO" isAutoinc="NO" length="30" pos="2" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Name</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>30</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>1</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="descripcion" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="150" pos="3" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Description</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>150</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>2</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+  </Table>
+  <Table Name="especies" visible="YES" addNew="YES" consult="YES" modify="YES" delete="YES" visibleName="Species">
+    <Description></Description>
+    <FKinfo>Not Used</FKinfo>
+    <Field Name="codigo_especie" isPK="YES" isFK="NO" fkTable="None" isNullable="NO" isAutoinc="NO" length="5" pos="1" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Specie code</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>5</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>0</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="nombre" isPK="NO" isFK="NO" fkTable="None" isNullable="NO" isAutoinc="NO" length="200" pos="2" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Name</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>200</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>1</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="scherle" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="12" pos="3" type="FLOAT" defaultVal="1" visible="YES">
+      <Conf>
+        <VisName>Scherle</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>12</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>Not Used</InputText>
+        <FormatText>Not Used</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>2</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Not Used</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="uno_beta" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="12" pos="4" type="FLOAT" defaultVal="1" visible="YES">
+      <Conf>
+        <VisName>1/Beta</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>12</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>Not Used</InputText>
+        <FormatText>Not Used</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>3</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Not Used</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="formol_fresco_a" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="12" pos="5" type="FLOAT" defaultVal="1" visible="YES">
+      <Conf>
+        <VisName>Formol-Fresh a</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>12</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>Not Used</InputText>
+        <FormatText>Not Used</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>4</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Not Used</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="formol_fresco_b" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="12" pos="6" type="FLOAT" defaultVal="1" visible="YES">
+      <Conf>
+        <VisName>Formol-Fresh b</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>12</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>Not Used</InputText>
+        <FormatText>Not Used</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>5</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Not Used</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="diametro_min" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="12" pos="7" type="FLOAT" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Min diameter</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>12</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>Not Used</InputText>
+        <FormatText>Not Used</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>6</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Not Used</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="diametro_max" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="12" pos="8" type="FLOAT" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Max diameter</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>12</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>Not Used</InputText>
+        <FormatText>Not Used</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>7</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Not Used</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="umbral_redondez" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="12" pos="9" type="FLOAT" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Roundness threshold</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>12</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>Not Used</InputText>
+        <FormatText>Not Used</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>8</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Not Used</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="path_datos_clasificador" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="255" pos="10" type="VARCHAR" defaultVal="Null" visible="NO">
+      <Conf>
+        <VisName>Path File Classifier</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>255</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>Not Used</InputText>
+        <FormatText>Not Used</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>9</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Not Used</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+  </Table>
+  <Table Name="especies_capturadas" visible="YES" addNew="YES" consult="YES" modify="YES" delete="YES" visibleName="Analyzed Species">
+    <Description></Description>
+    <FKinfo>
+      <fkTable name="campanhas" relationshipName="Surveys">
+        <ShowFkFields>codigo_campanha;.</ShowFkFields>
+      </fkTable>
+      <fkTable name="especies" relationshipName="Species">
+        <ShowFkFields>codigo_especie;.</ShowFkFields>
+      </fkTable>
+    </FKinfo>
+    <Field Name="codigo_campanha" isPK="YES" isFK="YES" fkTable="campanhas" isNullable="NO" isAutoinc="NO" length="20" pos="1" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Survey code</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>20</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>0</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="codigo_especie" isPK="YES" isFK="YES" fkTable="especies" isNullable="NO" isAutoinc="NO" length="5" pos="2" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Specie code</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>5</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>1</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+  </Table>
+  <Table Name="estados_madurez" visible="YES" addNew="NO" consult="YES" modify="NO" delete="NO" visibleName="Maturity Stages">
+    <Description></Description>
+    <FKinfo>Not Used</FKinfo>
+    <Field Name="codigo_estado_madurez" isPK="YES" isFK="NO" fkTable="None" isNullable="NO" isAutoinc="NO" length="6" pos="1" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Maturity Stage code</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>6</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>0</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="nombre" isPK="NO" isFK="NO" fkTable="None" isNullable="NO" isAutoinc="NO" length="75" pos="2" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Name</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>75</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>1</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="descripcion" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="255" pos="3" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Description</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>255</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>2</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+  </Table>
+  <Table Name="factores_correccion" visible="YES" addNew="YES" consult="YES" modify="YES" delete="YES" visibleName="Correction factors">
+    <Description></Description>
+    <FKinfo>
+      <fkTable name="especies" relationshipName="Specie">
+        <ShowFkFields>nombre;.</ShowFkFields>
+      </fkTable>
+    </FKinfo>
+    <Field Name="codigo_especie" isPK="YES" isFK="YES" fkTable="especies" isNullable="NO" isAutoinc="NO" length="5" pos="1" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Specie code</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>5</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>0</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="rango" isPK="YES" isFK="NO" fkTable="None" isNullable="NO" isAutoinc="NO" length="5" pos="2" type="BIGINT" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Range</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>5</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>1</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="factor" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="12" pos="3" type="FLOAT" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Factor</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>12</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>Not Used</InputText>
+        <FormatText>Not Used</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>2</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Not Used</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+  </Table>
+  <Table Name="imagenes" visible="YES" addNew="YES" consult="YES" modify="YES" delete="YES" visibleName="Images">
+    <Description></Description>
+    <FKinfo>
+      <fkTable name="individuos" relationshipName="Individual">
+        <ShowFkFields>codigo_campanha;codigo_especie;codigo_muestreo;codigo_individuo;.</ShowFkFields>
+      </fkTable>
+      <fkTable name="protocolos" relationshipName="Protocol">
+        <ShowFkFields>protocolo;.</ShowFkFields>
+      </fkTable>
+    </FKinfo>
+    <Field Name="codigo_campanha" isPK="YES" isFK="YES" fkTable="individuos" isNullable="NO" isAutoinc="NO" length="20" pos="1" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Survey code</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>20</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>0</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="codigo_especie" isPK="YES" isFK="YES" fkTable="individuos" isNullable="NO" isAutoinc="NO" length="5" pos="2" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Sampling code</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>10</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>0</Row>
+        <Column>1</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="codigo_muestreo" isPK="YES" isFK="YES" fkTable="individuos" isNullable="NO" isAutoinc="NO" length="10" pos="3" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Sampling code</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>10</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>0</Row>
+        <Column>2</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="codigo_individuo" isPK="YES" isFK="YES" fkTable="individuos" isNullable="NO" isAutoinc="NO" length="10" pos="4" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Individual code</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>10</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>0</Row>
+        <Column>3</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="codigo_imagen" isPK="YES" isFK="NO" fkTable="None" isNullable="NO" isAutoinc="NO" length="3" pos="5" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Image code</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>3</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>1</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="protocolo" isPK="NO" isFK="YES" fkTable="protocolos" isNullable="YES" isAutoinc="NO" length="255" pos="6" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Protocol</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>255</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>2</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="tincion" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="50" pos="7" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Stain</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>50</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>4</Row>
+        <Column>1</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="magnificacion" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="12" pos="8" type="FLOAT" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Magnification</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>12</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>Not Used</InputText>
+        <FormatText>Not Used</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>3</Row>
+        <Column>1</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Not Used</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="calibracion" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="12" pos="9" type="FLOAT" defaultVal="0" visible="YES">
+      <Conf>
+        <VisName>Calibration</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>12</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>Not Used</InputText>
+        <FormatText>Not Used</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>3</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Not Used</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="calibracion_boolean" isPK="NO" isFK="NO" fkTable="None" isNullable="NO" isAutoinc="NO" length="1" pos="10" type="BIT" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Calibration is updated</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>CHECKBOX</ShowType>
+        <Description>Activate checkbox if calibration has been updated</Description>
+        <MaxTam>Not Used</MaxTam>
+        <MinTam>Not Used</MinTam>
+        <InputText>Not Used</InputText>
+        <FormatText>Not Used</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>4</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Not Used</ErrorTam>
+        <ErrorFormat>Not Used</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="path_original" isPK="NO" isFK="NO" fkTable="None" isNullable="NO" isAutoinc="NO" length="255" pos="11" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Image</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>IMAGE</ShowType>
+        <Description>(Valid types are: "jpg", "tiff", "TIF", "png")</Description>
+        <MaxTam>255</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>0</FileSize>
+        <ExtAllowed>tiff
+jpg
+tif
+TIF
+png</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>6</Row>
+        <Column>1</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>File Format Error</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="luminosidad" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="12" pos="12" type="FLOAT" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Lightness</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>12</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>Not Used</InputText>
+        <FormatText>Not Used</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>5</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Not Used</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="filtro" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="50" pos="13" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Filter</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>50</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>9</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="tipo" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="50" pos="14" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Image Type</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>50</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>6</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="filas" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="5" pos="15" type="SMALLINT" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Rows</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>5</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>Not Used</InputText>
+        <FormatText>Not Used</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>7</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Not Used</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="columnas" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="5" pos="16" type="SMALLINT" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Columns</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>5</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>Not Used</InputText>
+        <FormatText>Not Used</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>7</Row>
+        <Column>1</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Not Used</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="bits" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="3" pos="17" type="TINYINT" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Bits</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>3</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>Not Used</InputText>
+        <FormatText>Not Used</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>8</Row>
+        <Column>2</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Not Used</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="path_ovocitos" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="255" pos="18" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Oocyte outline</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>FILE</ShowType>
+        <Description></Description>
+        <MaxTam>255</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>0</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>5</Row>
+        <Column>1</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="path_xml_paso_1" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="255" pos="19" type="VARCHAR" defaultVal="Null" visible="NO">
+      <Conf>
+        <VisName>Path_xml_1</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>FILE</ShowType>
+        <Description>(Valid type is: "xml")</Description>
+        <MaxTam>255</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>0</FileSize>
+        <ExtAllowed>xml
+null</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>Not Used</Row>
+        <Column>Not Used</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>File Error</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="path_xml_paso_2" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="255" pos="20" type="VARCHAR" defaultVal="Null" visible="NO">
+      <Conf>
+        <VisName>Path_xml_2</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>FILE</ShowType>
+        <Description>(Valid type is: "xml")</Description>
+        <MaxTam>255</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>0</FileSize>
+        <ExtAllowed>xml
+null</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>Not Used</Row>
+        <Column>Not Used</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>File Error</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="path_xml_paso_3" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="255" pos="21" type="VARCHAR" defaultVal="Null" visible="NO">
+      <Conf>
+        <VisName>Path_xml_3</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>FILE</ShowType>
+        <Description>(Valid type is: "xml")</Description>
+        <MaxTam>255</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>0</FileSize>
+        <ExtAllowed>xml
+null</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>Not Used</Row>
+        <Column>Not Used</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>File Error</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="path_xml_paso_4" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="255" pos="22" type="VARCHAR" defaultVal="Null" visible="NO">
+      <Conf>
+        <VisName>Path_xml_4</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>FILE</ShowType>
+        <Description>(Valid type is: "xml")</Description>
+        <MaxTam>255</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>0</FileSize>
+        <ExtAllowed>xml
+null</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>Not Used</Row>
+        <Column>Not Used</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>File Error</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="path_xml_paso_5" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="255" pos="23" type="VARCHAR" defaultVal="Null" visible="NO">
+      <Conf>
+        <VisName>Path_xml_5</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>FILE</ShowType>
+        <Description>(Valid type is: "xml")</Description>
+        <MaxTam>255</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>0</FileSize>
+        <ExtAllowed>xml
+null</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>Not Used</Row>
+        <Column>Not Used</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>File Error</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="fichero_inf" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="255" pos="24" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>.Inf file</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>FILE</ShowType>
+        <Description>(Valid type is: "inf")</Description>
+        <MaxTam>255</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>0</FileSize>
+        <ExtAllowed>inf
+null</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>8</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="md5" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="32" pos="25" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>md5</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>32</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>11</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>File Error</ErrorFile>
+      </ErrorMessages>
+    </Field>
+  </Table>
+  <Table Name="individuos" visible="YES" addNew="YES" consult="YES" modify="YES" delete="YES" visibleName="Individuals">
+    <Description></Description>
+    <FKinfo>
+      <fkTable name="muestreos" relationshipName="Samplings">
+        <ShowFkFields>codigo_campanha;codigo_especie;codigo_muestreo;.</ShowFkFields>
+      </fkTable>
+    </FKinfo>
+    <Field Name="codigo_campanha" isPK="YES" isFK="YES" fkTable="muestreos" isNullable="NO" isAutoinc="NO" length="20" pos="1" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Survey code</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>20</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>0</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="codigo_especie" isPK="YES" isFK="YES" fkTable="muestreos" isNullable="NO" isAutoinc="NO" length="5" pos="2" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Specie code</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>5</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>1</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="codigo_muestreo" isPK="YES" isFK="YES" fkTable="muestreos" isNullable="NO" isAutoinc="NO" length="10" pos="3" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Sampling code</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>10</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>2</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="codigo_individuo" isPK="YES" isFK="NO" fkTable="None" isNullable="NO" isAutoinc="NO" length="10" pos="4" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Individual code</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>10</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>3</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="talla" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="22" pos="5" type="DOUBLE" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Length</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description>(cm)</Description>
+        <MaxTam>22</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>Not Used</InputText>
+        <FormatText>Not Used</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>4</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Not Used</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="peso_total" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="22" pos="5" type="DOUBLE" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Total weight</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description>(g)</Description>
+        <MaxTam>22</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>Not Used</InputText>
+        <FormatText>Not Used</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>5</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Not Used</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="peso_eviscerado" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="22" pos="7" type="DOUBLE" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Gutted weight</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>22</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>Not Used</InputText>
+        <FormatText>Not Used</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>6</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Not Used</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="sexo" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="12" pos="8" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Sex</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>SELECT</ShowType>
+        <Description>Select "undetermined" if you don't know the sex</Description>
+        <MaxTam>12</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Undetermined
+Male
+Female</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>7</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="estado_madurez" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="5" pos="9" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Maturity stage</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>5</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>8</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="peso_gonadas_fresco" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="22" pos="10" type="DOUBLE" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Fresh gonad weight</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>22</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>Not Used</InputText>
+        <FormatText>Not Used</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>9</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Not Used</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="peso_gonadas_formol" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="22" pos="11" type="DOUBLE" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Formol gonad weight</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>22</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>Not Used</InputText>
+        <FormatText>Not Used</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>10</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Not Used</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="peso_higado" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="22" pos="12" type="DOUBLE" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Liver weight</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>22</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>Not Used</InputText>
+        <FormatText>Not Used</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>11</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Not Used</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+  </Table>
+  <Table Name="individuos_fecundidad" visible="YES" addNew="NO" consult="YES" modify="NO" delete="NO" visibleName="Fecundity">
+    <Description></Description>
+    <FKinfo>
+      <fkTable name="individuos" relationshipName="Individual">
+        <ShowFkFields>codigo_campanha;codigo_especie;codigo_muestreo;codigo_individuo;.</ShowFkFields>
+      </fkTable>
+      <fkTable name="estados_madurez" relationshipName="Maturity Stage">
+        <ShowFkFields>nombre;.</ShowFkFields>
+      </fkTable>
+      <fkTable name="rejillas" relationshipName="Grid">
+        <ShowFkFields>codigo_rejilla;.</ShowFkFields>
+      </fkTable>
+    </FKinfo>
+    <Field Name="codigo_rejilla" isPK="YES" isFK="YES" fkTable="rejillas" isNullable="NO" isAutoinc="NO" length="5" pos="5" type="SMALLINT" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>codigo_rejilla</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>5</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>NUM</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>0</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>File Error</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="codigo_estado_madurez" isPK="YES" isFK="YES" fkTable="estados_madurez" isNullable="NO" isAutoinc="NO" length="6" pos="6" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>codigo_estado_madurez</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>6</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>1</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>File Error</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="codigo_campanha" isPK="YES" isFK="YES" fkTable="individuos" isNullable="NO" isAutoinc="NO" length="20" pos="1" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>codigo_campanha</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>20</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>2</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>File Error</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="codigo_especie" isPK="YES" isFK="YES" fkTable="individuos" isNullable="NO" isAutoinc="NO" length="5" pos="2" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Specie code</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>5</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>3</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>File Error</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="codigo_muestreo" isPK="YES" isFK="YES" fkTable="individuos" isNullable="NO" isAutoinc="NO" length="10" pos="3" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Sampling code</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>10</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>3</Row>
+        <Column>1</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>File Error</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="codigo_individuo" isPK="YES" isFK="YES" fkTable="individuos" isNullable="NO" isAutoinc="NO" length="10" pos="4" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>codigo_individuo</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>10</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>4</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>File Error</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="fecundidad" isPK="NO" isFK="NO" fkTable="None" isNullable="NO" isAutoinc="NO" length="19" pos="7" type="BIGINT" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>fecundidad</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>19</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>NUM</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>5</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>File Error</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="fecha_fecundidad" isPK="NO" isFK="NO" fkTable="None" isNullable="NO" isAutoinc="NO" length="50" pos="8" type="TIMESTAMP" defaultVal="CURRENT_TIMESTAMP" visible="YES">
+      <Conf>
+        <VisName>Date of experiment</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>Not Used</MaxTam>
+        <MinTam>Not Used</MinTam>
+        <InputText>Not Used</InputText>
+        <FormatText>Not Used</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>6</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Not Used</ErrorTam>
+        <ErrorFormat>Not Used</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="k" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="12" pos="9" type="FLOAT" defaultVal="1" visible="YES">
+      <Conf>
+        <VisName>K factor</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>12</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>Not Used</InputText>
+        <FormatText>Not Used</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>7</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Not Used</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="metodo" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="4" pos="10" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Method</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description>Grid or Histology</Description>
+        <MaxTam>4</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>8</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="imgs_usadas" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="5" pos="11" type="SMALLINT" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>No. of used images</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>5</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>Not Used</InputText>
+        <FormatText>Not Used</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>9</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Not Used</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+  </Table>
+  <Table Name="muestreos" visible="YES" addNew="YES" consult="YES" modify="YES" delete="YES" visibleName="Samplings">
+    <Description></Description>
+    <FKinfo>
+      <fkTable name="especies_capturadas" relationshipName="Analyzed Species">
+        <ShowFkFields>codigo_campanha;codigo_especie;.</ShowFkFields>
+      </fkTable>
+    </FKinfo>
+    <Field Name="codigo_campanha" isPK="YES" isFK="YES" fkTable="especies_capturadas" isNullable="NO" isAutoinc="NO" length="20" pos="1" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Survey code</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>20</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>0</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="codigo_especie" isPK="YES" isFK="YES" fkTable="especies_capturadas" isNullable="NO" isAutoinc="NO" length="5" pos="2" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Specie code</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>5</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>1</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="codigo_muestreo" isPK="YES" isFK="NO" fkTable="None" isNullable="NO" isAutoinc="NO" length="10" pos="3" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Sampling code</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>10</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>2</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="muestreador" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="200" pos="4" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Sampler</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>200</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>3</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="puerto" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="150" pos="5" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Port</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>150</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>4</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="latitud" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="12" pos="6" type="FLOAT" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Latitude</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>12</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>Not Used</InputText>
+        <FormatText>Not Used</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>5</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Not Used</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="longitud" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="12" pos="7" type="FLOAT" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Longitude</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>12</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>Not Used</InputText>
+        <FormatText>Not Used</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>6</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Not Used</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="fecha" isPK="NO" isFK="NO" fkTable="None" isNullable="NO" isAutoinc="NO" length="22" pos="8" type="VARCHAR" visible="YES">
+      <Conf>
+        <VisName>Date</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description>(Date format: "yyyy-mm-dd hh:mm")</Description>
+        <MaxTam>22</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>7</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Not Used</ErrorTam>
+        <ErrorFormat>Not Used</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+  </Table>
+  <Table Name="protocolos" visible="YES" addNew="YES" consult="YES" modify="YES" delete="YES" visibleName="Protocols">
+    <Description></Description>
+    <FKinfo>Not Used</FKinfo>
+    <Field Name="protocolo" isPK="YES" isFK="NO" fkTable="None" isNullable="NO" isAutoinc="NO" length="255" pos="1" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Protocol</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>255</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>0</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="descripcion" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="255" pos="2" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Description</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>255</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>1</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="fichero_detalles" isPK="NO" isFK="NO" fkTable="None" isNullable="YES" isAutoinc="NO" length="255" pos="3" type="VARCHAR" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Details file</VisName>
+        <VisNull>YES</VisNull>
+        <ShowType>FILE</ShowType>
+        <Description>(Actual file name: "hematoxylin-eosin.doc")  (Valid types are: "odt", "doc", "docx", "pdf")</Description>
+        <MaxTam>255</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>ALL</InputText>
+        <FormatText>NONE</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>0</FileSize>
+        <ExtAllowed>odt
+doc
+docx
+pdf</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>2</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Format Error</ErrorFormat>
+        <ErrorFile>File Error</ErrorFile>
+      </ErrorMessages>
+    </Field>
+  </Table>
+  <Table Name="rejillas" visible="YES" addNew="YES" consult="YES" modify="NO" delete="NO" visibleName="Grids">
+    <Description></Description>
+    <FKinfo>Not Used</FKinfo>
+    <Field Name="codigo_rejilla" isPK="YES" isFK="NO" fkTable="None" isNullable="NO" isAutoinc="YES" length="5" pos="1" type="SMALLINT" defaultVal="Null" visible="YES">
+      <Conf>
+        <VisName>Grid code</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>5</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>Not Used</InputText>
+        <FormatText>Not Used</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>0</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Not Used</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="puntos_fila" isPK="NO" isFK="NO" fkTable="None" isNullable="NO" isAutoinc="NO" length="5" pos="2" type="SMALLINT" defaultVal="0" visible="YES">
+      <Conf>
+        <VisName>Row points</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>5</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>Not Used</InputText>
+        <FormatText>Not Used</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>1</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Not Used</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="puntos_columna" isPK="NO" isFK="NO" fkTable="None" isNullable="NO" isAutoinc="NO" length="5" pos="3" type="SMALLINT" defaultVal="0" visible="YES">
+      <Conf>
+        <VisName>Column points</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>5</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>Not Used</InputText>
+        <FormatText>Not Used</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>2</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Not Used</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+    <Field Name="distancia" isPK="NO" isFK="NO" fkTable="None" isNullable="NO" isAutoinc="NO" length="5" pos="4" type="SMALLINT" defaultVal="0" visible="YES">
+      <Conf>
+        <VisName>Distance</VisName>
+        <VisNull>NO</VisNull>
+        <ShowType>TEXT</ShowType>
+        <Description></Description>
+        <MaxTam>5</MaxTam>
+        <MinTam>0</MinTam>
+        <InputText>Not Used</InputText>
+        <FormatText>Not Used</FormatText>
+        <Options>Not Used</Options>
+        <FileSize>Not Used</FileSize>
+        <ExtAllowed>Not Used</ExtAllowed>
+        <EERR>Not Used</EERR>
+        <Row>3</Row>
+        <Column>0</Column>
+      </Conf>
+      <ErrorMessages>
+        <ErrorVisNull>Null Error</ErrorVisNull>
+        <ErrorInput>Input Error</ErrorInput>
+        <ErrorTam>Length Error</ErrorTam>
+        <ErrorFormat>Not Used</ErrorFormat>
+        <ErrorFile>Not Used</ErrorFile>
+      </ErrorMessages>
+    </Field>
+  </Table>
+</DataBase>

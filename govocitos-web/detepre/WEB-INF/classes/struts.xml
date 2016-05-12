@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="true" />
+    <constant name="struts.multipart.maxSize" value="50000000" />
+
+    <package name="detepre" extends="struts-default">
+
+        <action name="showLogin">
+            <result>login.jsp</result>
+        </action>
+
+        <action name="showConfiguration">
+            <result>dbData.jsp</result>
+        </action>
+
+        <action name="login" class="es.uvigo.ei.lia.ddms.dms.actions.Login" >
+            <result name="success" type="dispatcher">listTables.jsp</result>
+            <result name="error">login.jsp</result>
+            <result name="noaccess" type="redirect">showLogin.action</result>
+        </action>
+
+        <action name="logout" class="es.uvigo.ei.lia.ddms.dms.actions.Logout" >
+            <result name="success">login.jsp</result>
+            <result name="noaccess" type="redirect">showLogin.action</result>
+        </action>
+
+        <action name="listTable" class="es.uvigo.ei.lia.ddms.dms.actions.ListTable" >
+            <result name="success" type="dispatcher">listTables.jsp</result>
+            <result name="error">listTables.jsp</result>
+            <result name="noaccess" type="redirect">showLogin.action</result>
+        </action>
+
+        <action name="showItemData" class="es.uvigo.ei.lia.ddms.dms.actions.ShowItemData" >
+            <result name="success" type="dispatcher">showItemData.jsp</result>
+            <result name="error">listTables.jsp</result>
+            <result name="noaccess" type="redirect">showLogin.action</result>
+        </action>
+
+        <action name="doDelete" class="es.uvigo.ei.lia.ddms.dms.actions.DoDelete" >
+            <result name="success" type="dispatcher">listTables.jsp</result>
+            <result name="error">showItemData.jsp</result>
+            <result name="noaccess" type="redirect">showLogin.action</result>
+        </action>
+
+        <action name="doModify" class="es.uvigo.ei.lia.ddms.dms.actions.DoModify" >
+            <result name="success" type="dispatcher">showItemData.jsp</result>
+            <result name="error">modifyItemData.jsp</result>
+            <result name="noaccess" type="redirect">showLogin.action</result>
+        </action>
+
+        <action name="doAdd" class="es.uvigo.ei.lia.ddms.dms.actions.DoAdd" >
+            <result name="success" type="dispatcher">addItemData.jsp</result>
+            <result name="error">addItemData.jsp</result>
+            <result name="noaccess" type="redirect">showLogin.action</result>
+        </action>
+
+        <action name="showModifyItem" class="es.uvigo.ei.lia.ddms.dms.actions.ShowItemData" >
+            <result name="success" type="dispatcher">modifyItemData.jsp</result>
+            <result name="error">showItemData.jsp</result>
+            <result name="noaccess" type="redirect">showLogin.action</result>
+        </action>
+
+        <action name="addNewItem" class="es.uvigo.ei.lia.ddms.dms.actions.ShowAddItem" >
+            <result name="success" type="dispatcher">addItemData.jsp</result>
+            <result name="error">listTables.jsp</result>
+            <result name="noaccess" type="redirect">showLogin.action</result>
+        </action>
+        
+        <action name="exportCSV" class="es.uvigo.ei.lia.ddms.dms.actions.exportCSV" >
+            <result name="success" type="dispatcher">exportCSV.jsp</result>
+            <result name="error">listTables.jsp</result>
+            <result name="noaccess" type="redirect">showLogin.action</result>
+        </action>
+
+        <action name="listFields" class="es.uvigo.ei.lia.ddms.vcs.actions.ListFields" >
+            <result name="success" type="dispatcher">configurationTable4.jsp</result>
+            <result name="error">authError.jsp</result>
+            <result name="RELOAD">configurationTable3.jsp</result>
+        </action>
+
+        <action name="setFkFields" class="es.uvigo.ei.lia.ddms.vcs.actions.SetFkFields" >
+            <result name="success" type="dispatcher">configurationTable3.jsp</result>
+            <result name="error">authError.jsp</result>
+            <result name="RELOAD">configurationFKinfo.jsp</result>
+        </action>
+
+        <action name="setVisibles" class="es.uvigo.ei.lia.ddms.vcs.actions.SetVisibles" >
+            <result name="success" type="dispatcher">configurationTable2.jsp</result>
+            <result name="error" type="redirect">setOperations.action</result>
+            <result name="NO_PARAMETER" type="dispatcher">authError.jsp</result>
+        </action>
+
+        <action name="setOperations" class="es.uvigo.ei.lia.ddms.vcs.actions.SetOperations" >
+            <result name="success" type="dispatcher">configurationFKinfo.jsp</result>
+            <result name="error">menu.jsp</result>
+            <result name="NO_PARAMETER" type="dispatcher">authError.jsp</result>
+            <result name="SAVE">configurationTable6.jsp</result>
+        </action>
+
+        <action name="setView" class="es.uvigo.ei.lia.ddms.vcs.actions.SetView" >
+            <result name="success" type="dispatcher">configurationTable5.jsp</result>
+            <result name="RELOAD">configurationTable4.jsp</result>
+            <result name="error">dbData.jsp</result>
+            <result name="NO_PARAMETER" type="dispatcher">authError.jsp</result>
+        </action>
+
+        <action name="setProps" class="es.uvigo.ei.lia.ddms.vcs.actions.SetProps" >
+            <result name="success" type="dispatcher">configurationView.jsp</result>
+            <result name="NO_PARAMETER" type="dispatcher">authError.jsp</result>
+            <result name="error">menu.jsp</result>
+            <result name="NUMERIC_ERROR">configurationTable5.jsp</result>
+            <result name="RELOAD">configurationTable3.jsp</result>
+        </action>
+
+        <action name="setDBData" class="es.uvigo.ei.lia.ddms.vcs.actions.SetDBData" >
+            <result name="success" type="dispatcher">menu.jsp</result>
+            <result name="error" type="dispatcher">dbData.jsp</result>
+            <result name="NO_PARAMETER" type="dispatcher">authError.jsp</result>
+        </action>
+
+        <action name="goMenu" class="es.uvigo.ei.lia.ddms.vcs.actions.GoMenu" >
+            <result name="success" type="dispatcher">menu.jsp</result>
+            <result name="NO_PARAMETER" type="dispatcher">authError.jsp</result>
+        </action>
+
+        <action name="goUpdateInfo" class="es.uvigo.ei.lia.ddms.vcs.actions.GoUpdateInfo" >
+            <result name="success" type="dispatcher">updateInfo.jsp</result>
+            <result name="NO_PARAMETER" type="dispatcher">authError.jsp</result>
+            <result name="error" type="dispatcher">menu.jsp</result>
+        </action>
+
+        <action name="goConfTable" class="es.uvigo.ei.lia.ddms.vcs.actions.GoConfTable" >
+            <result name="success" type="dispatcher">configurationTable.jsp</result>
+            <result name="NO_PARAMETER" type="dispatcher">authError.jsp</result>
+        </action>
+
+        <action name="goDeleteConf" class="es.uvigo.ei.lia.ddms.vcs.actions.GoDeleteConf" >
+            <result name="success" type="dispatcher">deleteConf.jsp</result>
+            <result name="NO_PARAMETER" type="dispatcher">authError.jsp</result>
+            <result name="error" type="dispatcher">menu.jsp</result>
+        </action>
+
+        <action name="goLoadConf" class="es.uvigo.ei.lia.ddms.vcs.actions.GoLoadConf" >
+            <result name="success" type="dispatcher">menu.jsp</result>
+            <result name="error" type="dispatcher">loadFile.jsp</result>
+        </action>
+
+        <action name="goConfTable3" class="es.uvigo.ei.lia.ddms.vcs.actions.GoConfTable3" >
+            <result name="success" type="dispatcher">configurationTable3.jsp</result>
+            <result name="NO_PARAMETER" type="dispatcher">authError.jsp</result>
+            <result name="error" type="dispatcher">configurationTable3.jsp</result>
+        </action>
+
+        <action name="goConfView" class="es.uvigo.ei.lia.ddms.vcs.actions.GoConfView" >
+            <result name="success" type="dispatcher">configurationView.jsp</result>
+            <result name="error" type="dispatcher">configurationFKinfo.jsp</result>
+            <result name="NO_PARAMETER" type="dispatcher">authError.jsp</result>
+        </action>
+
+        <action name="goConfView2" class="es.uvigo.ei.lia.ddms.vcs.actions.GoConfView2" >
+            <result name="success" type="dispatcher">configurationTable6.jsp</result>
+            <result name="NO_PARAMETER" type="dispatcher">authError.jsp</result>
+            <result name="CONFIGURE" type="dispatcher">configurationView2.jsp</result>
+        </action>
+
+        <action name="goUsersConf" class="es.uvigo.ei.lia.ddms.vcs.actions.GoUsersConf" >
+            <result name="success" type="dispatcher">usersConf.jsp</result>
+            <result name="NO_PARAMETER" type="dispatcher">authError.jsp</result>
+        </action>
+
+        <action name="goImageConf" class="es.uvigo.ei.lia.ddms.vcs.actions.GoImageConf" >
+            <result name="success" type="dispatcher">imagesConf.jsp</result>
+            <result name="NO_PARAMETER" type="dispatcher">authError.jsp</result>
+        </action>
+
+        <action name="goConfView3" class="es.uvigo.ei.lia.ddms.vcs.actions.GoConfView3" >
+            <result name="success" type="dispatcher">configurationView3.jsp</result>
+            <result name="RELOAD" type="dispatcher">configurationView2.jsp</result>
+            <result name="NO_PARAMETER" type="dispatcher">authError.jsp</result>
+            <result name="error" type="dispatcher">menu.jsp</result>
+        </action>
+        
+        <action name="menuSelected" class="es.uvigo.ei.lia.ddms.vcs.actions.menuSelected" >
+            <result name="fieldProps" type="redirect">webConfiguration/goConfTable.action</result>
+            <result name="userConf" type="redirect">webConfiguration/goUsersConf.action</result>
+            <result name="imageConf" type="redirect">webConfiguration/goImageConf.action</result>
+            <result name="updateConf" type="redirect">webConfiguration/goUpdateInfo.action</result>
+            <result name="deleteConf" type="redirect">webConfiguration/goDeleteConf.action</result>
+            <result name="loadConf" type="dispatcher">loadFile.jsp</result>
+            <!--<result name="Back" type="redirect">showLogin.action</result>-->
+            <result name="error" type="dispatcher">authError.jsp</result>
+        </action>
+
+        <action name="goMainMenu" class="es.uvigo.ei.lia.ddms.vcs.actions.GoMainMenu" >
+            <result name="success" type="dispatcher">menu.jsp</result>
+            <result name="NO_PARAMETER" type="dispatcher">authError.jsp</result>
+        </action>
+
+        <action name="manageUser" class="es.uvigo.ei.lia.ddms.vcs.actions.ManageUser" >
+            <result name="RELOAD" type="dispatcher">usersConf.jsp</result>
+            <result name="NO_PARAMETER" type="dispatcher">authError.jsp</result>
+        </action>
+
+       <action name="manageImages" class="es.uvigo.ei.lia.ddms.vcs.actions.ManageImages" >
+                <result name="RELOAD" type="dispatcher">imagesConf.jsp</result>
+                <result name="NO_PARAMETER" type="dispatcher">authError.jsp</result>
+            </action>
+        </package>
+</struts>

@@ -1,0 +1,391 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE>Help for Advanced Search</TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 3.0  (Unix)">
+	<META NAME="AUTHOR" CONTENT="Jacobo Campos Casal">
+	<META NAME="CREATED" CONTENT="20090923;16431000">
+	<META NAME="CHANGEDBY" CONTENT="Jacobo Campos Casal">
+	<META NAME="CHANGED" CONTENT="20090930;19112400">
+	<META NAME="Info 1" CONTENT="Help for Advanced Search">
+	<META NAME="Info 2" CONTENT="">
+	<META NAME="Info 3" CONTENT="">
+	<META NAME="Info 4" CONTENT="">
+	<META NAME="CHANGEDBY" CONTENT="Jacobo Campos Casal">
+	<META NAME="CHANGEDBY" CONTENT="Jacobo Campos Casal">
+	<META NAME="CHANGEDBY" CONTENT="Jacobo Campos Casal">
+	<META NAME="CHANGEDBY" CONTENT="Jacobo Campos Casal">
+</HEAD>
+<BODY LANG="es-ES" DIR="LTR">
+<H1 LANG="en-GB" ALIGN=CENTER><FONT FACE="Tahoma, sans-serif">HELP
+FOR ADVANCED SEARCH</FONT></H1>
+<HR>
+<P LANG="en-GB"><FONT FACE="Tahoma, sans-serif">The Advanced Search
+module allows you carrying out a query over stored data as complex as
+you may need.</FONT></P>
+<P LANG="en-GB"><FONT FACE="Tahoma, sans-serif">Synopsis <SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">(fields
+between square brackets are optional)</SPAN></SPAN>:</FONT></P>
+<P LANG="en-GB" ALIGN=CENTER><FONT FACE="Tahoma, sans-serif"><I><B>&lt;field&gt;
+&lt;relational_operator&gt; &lt;value&gt; [ &lt;logical_operator&gt;
+&lt;field&gt; &lt;relational_operator&gt; &lt;value&gt; [
+&lt;logical_operator&gt; ... ] ]</B></I></FONT></P>
+<P LANG="en-GB" ALIGN=LEFT STYLE="font-style: normal; font-weight: normal">
+<FONT FACE="Tahoma, sans-serif">where:</FONT></P>
+<UL>
+	<LI><P ALIGN=LEFT><FONT FACE="Tahoma, sans-serif"><SPAN LANG="en-GB"><I><B>field:</B></I></SPAN></FONT>
+	<FONT FACE="Tahoma, sans-serif"><SPAN LANG="en-GB"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">A
+	field of a selected table (or a field of a foreign table related to
+	a selected table) in which your conditions are based.</SPAN></SPAN></SPAN></FONT></P>
+	<LI><P ALIGN=LEFT><FONT FACE="Tahoma, sans-serif"><SPAN LANG="en-GB"><I><B>relational_operator:</B></I></SPAN></FONT>
+	<FONT FACE="Tahoma, sans-serif"><SPAN LANG="en-GB"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Any
+	of the possible values: “=” (equal), “&lt;&gt;” (different),
+	“&lt;” (less than), “&lt;=” (less than or equal), “&gt;”
+	(greater than) and “&gt;=” (greater than or equal).</SPAN></SPAN></SPAN></FONT></P>
+	<LI><P ALIGN=LEFT><FONT FACE="Tahoma, sans-serif"><SPAN LANG="en-GB"><I><B>value:
+	</B></I></SPAN></FONT><FONT FACE="Tahoma, sans-serif"><SPAN LANG="en-GB"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">The
+	value you are looking for. If the value has more than one word
+	(separated by blanks) you must write that value between quotation
+	marks. Indeed, it's a good idea to avoid problems that you write all
+	values between quotation marks even if the value has only one word.
+	For example, </SPAN></SPAN></SPAN></FONT><FONT FACE="Tahoma, sans-serif"><SPAN LANG="en-GB"><I><SPAN STYLE="font-weight: normal">name
+	= James</SPAN></I></SPAN></FONT> <FONT FACE="Tahoma, sans-serif"><SPAN LANG="en-GB"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">has
+	the same effect as </SPAN></SPAN></SPAN></FONT><FONT FACE="Tahoma, sans-serif"><SPAN LANG="en-GB"><I><SPAN STYLE="font-weight: normal">name
+	= ”James”</SPAN></I></SPAN></FONT> <FONT FACE="Tahoma, sans-serif"><SPAN LANG="en-GB"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">but
+	</SPAN></SPAN></SPAN></FONT><FONT FACE="Tahoma, sans-serif"><SPAN LANG="en-GB"><I><SPAN STYLE="font-weight: normal">name
+	= James Jones</SPAN></I></SPAN></FONT> <FONT FACE="Tahoma, sans-serif"><SPAN LANG="en-GB"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">is
+	not correct; the correct form is </SPAN></SPAN></SPAN></FONT><FONT FACE="Tahoma, sans-serif"><SPAN LANG="en-GB"><I><SPAN STYLE="font-weight: normal">name
+	= ”James Jones”</SPAN></I></SPAN></FONT><FONT FACE="Tahoma, sans-serif"><SPAN LANG="en-GB"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">.
+	<BR>Notice that values have to be of the type related to the field
+	selected before, e.g. </SPAN></SPAN></SPAN></FONT><FONT FACE="Tahoma, sans-serif"><SPAN LANG="en-GB"><I><SPAN STYLE="font-weight: normal">age
+	= ”man”</SPAN></I></SPAN></FONT> <FONT FACE="Tahoma, sans-serif"><SPAN LANG="en-GB"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">is
+	not correct because the age field only accepts numbers</SPAN></SPAN></SPAN></FONT><FONT FACE="Tahoma, sans-serif"><SPAN LANG="en-GB"><I><SPAN STYLE="font-weight: normal">.</SPAN></I></SPAN></FONT></P>
+	<LI><P ALIGN=LEFT><FONT FACE="Tahoma, sans-serif"><SPAN LANG="en-GB"><I><B>logical_operator:</B></I></SPAN></FONT>
+	<FONT FACE="Tahoma, sans-serif"><SPAN LANG="en-GB"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Any
+	of the possible values: “and” and “or”.</SPAN></SPAN></SPAN></FONT></P>
+</UL>
+<P LANG="en-GB" ALIGN=LEFT STYLE="font-style: normal; font-weight: normal">
+<FONT FACE="Tahoma, sans-serif">This is the correct sequence to
+create a valid query:</FONT></P>
+<OL>
+	<LI><P LANG="en-GB" ALIGN=LEFT STYLE="font-style: normal; font-weight: normal">
+	<FONT FACE="Tahoma, sans-serif">First step, select a field.</FONT></P>
+	<LI><P LANG="en-GB" ALIGN=LEFT STYLE="font-style: normal; font-weight: normal">
+	<FONT FACE="Tahoma, sans-serif">Second step, select a relational
+	operator.</FONT></P>
+	<LI><P LANG="en-GB" ALIGN=LEFT STYLE="font-style: normal; font-weight: normal">
+	<FONT FACE="Tahoma, sans-serif">Third step, write a value for the
+	field.</FONT></P>
+	<LI><P LANG="en-GB" ALIGN=LEFT STYLE="font-style: normal; font-weight: normal">
+	<FONT FACE="Tahoma, sans-serif">(Fourth step, OPTIONAL) If you want
+	to go on with the condition and make it more complex, you have to
+	select a logical operator and go on with the first step.</FONT></P>
+</OL>
+<P LANG="en-GB" ALIGN=LEFT STYLE="font-style: normal; font-weight: normal">
+<FONT FACE="Tahoma, sans-serif">For example, some valid queries are:</FONT></P>
+<UL>
+	<LI><P LANG="en-GB" ALIGN=LEFT STYLE="font-style: normal; font-weight: normal">
+	<FONT FACE="Tahoma, sans-serif">name = “James”</FONT></P>
+	<LI><P LANG="en-GB" ALIGN=LEFT STYLE="font-style: normal; font-weight: normal">
+	<FONT FACE="Tahoma, sans-serif">name = “James” and last_name &lt;&gt;
+	“Smith Johnson”</FONT></P>
+	<LI><P LANG="en-GB" ALIGN=LEFT STYLE="font-style: normal; font-weight: normal">
+	<FONT FACE="Tahoma, sans-serif">name = “James” and last_name &lt;&gt;
+	“Smith Johnson” or age &gt;= “40”</FONT></P>
+	<LI><P ALIGN=LEFT>…</P>
+</UL>
+<P LANG="en-GB" ALIGN=LEFT STYLE="font-style: normal"><FONT FACE="Tahoma, sans-serif"><B>Note,
+how all components of the sentence are separated by one (or more)
+blank spaces. This is important to identify well all tokens.</B></FONT></P>
+<H1 LANG="en-GB" STYLE="font-style: normal"><FONT FACE="Tahoma, sans-serif">Changing
+priorities</FONT></H1>
+<P LANG="en-GB" ALIGN=LEFT STYLE="font-style: normal; font-weight: normal">
+<FONT FACE="Tahoma, sans-serif"><FONT SIZE=3>It is very important to
+know the impact of priorities over a query. Use parenthesis
+accordingly or when in doubt.</FONT></FONT></P>
+<P ALIGN=LEFT STYLE="font-weight: normal"><A NAME="DDE_LINK1"></A><FONT SIZE=3><FONT FACE="Tahoma, sans-serif"><SPAN LANG="en-GB"><SPAN STYLE="font-style: normal">In
+our case, all relational operators have the same priority but this is
+not same for logical operators. So, you should know that the “and”
+logical operator has higher priority than the “or” one. For
+example, the sentence </SPAN></SPAN></FONT><FONT FACE="Tahoma, sans-serif"><SPAN LANG="en-GB"><I>name
+= ”James” and last_name &lt;&gt; “Smith Johnson” or age &gt;=
+“40”</I></SPAN></FONT> <FONT FACE="Tahoma, sans-serif"><SPAN LANG="en-GB"><SPAN STYLE="font-style: normal">doesn't
+obtain the same registers as the sentence </SPAN></SPAN></FONT><FONT FACE="Tahoma, sans-serif"><SPAN LANG="en-GB"><I>name
+= “James” and ( last_name &lt;&gt; “Smith Johnson” or age &gt;=
+“40” )</I></SPAN></FONT><FONT FACE="Tahoma, sans-serif"><SPAN LANG="en-GB"><SPAN STYLE="font-style: normal">.
+The first one means that we want to obtain all registries that fulfil
+that the name is James and that the last name is not Smith Johnson,
+or (if not) the age is greater or equal than 40. However, in the
+second sentence priorities have been changed and now it means, we
+want to obtain all registries that fulfil that the name is James and
+that either last name is not Smith Johnson or the age is greater or
+equal than 40. So, it is very important to keep this in mind when we
+write a query. Let's suppose that we have got the following register
+in a database :</SPAN></SPAN></FONT></FONT></P>
+<TABLE WIDTH=100% BORDER=1 CELLPADDING=4 CELLSPACING=3 STYLE="page-break-inside: avoid">
+	<COL WIDTH=85*>
+	<COL WIDTH=85*>
+	<COL WIDTH=85*>
+	<TR>
+		<TD WIDTH=33%>
+			<P LANG="en-GB" ALIGN=CENTER><FONT FACE="Tahoma, sans-serif"><FONT SIZE=3><B>NAME</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=33%>
+			<P LANG="en-GB" ALIGN=CENTER><FONT FACE="Tahoma, sans-serif"><FONT SIZE=3><B>LAST
+			NAME</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=33%>
+			<P LANG="en-GB" ALIGN=CENTER><FONT FACE="Tahoma, sans-serif"><FONT SIZE=3><B>AGE</B></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=33%>
+			<P LANG="en-GB" ALIGN=LEFT><FONT FACE="Tahoma, sans-serif">Peter</FONT></P>
+		</TD>
+		<TD WIDTH=33%>
+			<P LANG="en-GB" ALIGN=LEFT><FONT FACE="Tahoma, sans-serif">Smith
+			Johnson</FONT></P>
+		</TD>
+		<TD WIDTH=33% SDVAL="40" SDNUM="1033;">
+			<P LANG="en-GB" ALIGN=LEFT><FONT FACE="Tahoma, sans-serif">40</FONT></P>
+		</TD>
+	</TR>
+</TABLE>
+<UL>
+	<LI><P ALIGN=LEFT STYLE="font-weight: normal"><A NAME="DDE_LINK11"></A>
+	<FONT SIZE=3><FONT FACE="Tahoma, sans-serif"><SPAN LANG="en-GB"><SPAN STYLE="font-style: normal">The
+	query</SPAN></SPAN></FONT> <FONT FACE="Tahoma, sans-serif"><SPAN LANG="en-GB"><I>name
+	= ”James” and last_name &lt;&gt; “Smith Johnson” or age &gt;=
+	“40” </I></SPAN></FONT><FONT FACE="Tahoma, sans-serif"><SPAN LANG="en-GB"><SPAN STYLE="font-style: normal">would
+	return “Peter, Smith Johnson, 40”.</SPAN></SPAN></FONT></FONT></P>
+	<LI><P ALIGN=LEFT STYLE="font-weight: normal"><FONT SIZE=3><FONT FACE="Tahoma, sans-serif"><SPAN LANG="en-GB"><SPAN STYLE="font-style: normal">However,
+	the query </SPAN></SPAN></FONT><FONT FACE="Tahoma, sans-serif"><SPAN LANG="en-GB"><I>name
+	= “James” and ( last_name &lt;&gt; “Smith Johnson” or age &gt;=
+	“40” )</I></SPAN></FONT> <FONT FACE="Tahoma, sans-serif"><SPAN LANG="en-GB"><SPAN STYLE="font-style: normal">would
+	return nothing.</SPAN></SPAN></FONT></FONT></P>
+</UL>
+<H1 LANG="en-GB" ALIGN=LEFT STYLE="font-style: normal"><FONT FACE="Tahoma, sans-serif"><FONT SIZE=6><B>Wild
+card symbols</B></FONT></FONT></H1>
+<P LANG="en-GB" ALIGN=LEFT STYLE="font-style: normal; font-weight: normal">
+<FONT FACE="Tahoma, sans-serif"><FONT SIZE=3>The search engine allows
+to write more generic query sentences. As a result, we can look for a
+data although we don't exactly know its value. The wild card symbols
+are:</FONT></FONT></P>
+<UL>
+	<LI><P ALIGN=LEFT><FONT FACE="Tahoma, sans-serif"><FONT SIZE=3><SPAN LANG="en-GB"><SPAN STYLE="font-style: normal"><B>'%'
+	wild card</B></SPAN></SPAN></FONT></FONT> <FONT FACE="Tahoma, sans-serif"><FONT SIZE=3><SPAN LANG="en-GB"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">is
+	used to point out that we don't know (or we don't mind) the set of
+	characters placed at the position where % wild card symbol is. For
+	example, if we don't exactly know the whole name of a person but we
+	know that it begins with “Alfred”, we can write </SPAN></SPAN></SPAN></FONT></FONT><FONT FACE="Tahoma, sans-serif"><FONT SIZE=3><SPAN LANG="en-GB"><I><SPAN STYLE="font-weight: normal">name=”Alfred%”</SPAN></I></SPAN></FONT></FONT>
+	<FONT FACE="Tahoma, sans-serif"><FONT SIZE=3><SPAN LANG="en-GB"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">and,
+	for example, that could return: “Alfred”, “Alfredo”, “Alfred
+	Hitchcock</SPAN></SPAN></SPAN></FONT></FONT>”<FONT FACE="Tahoma, sans-serif"><FONT SIZE=3><SPAN LANG="en-GB"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">,
+	“Alfred Joseph”, etc. Note that if we want to point out the %
+	symbol not as a wild card but as a real symbol (for example the
+	string “100%”) we have to replace “%” by “\%” in the
+	query.</SPAN></SPAN></SPAN></FONT></FONT></P>
+	<LI><P ALIGN=LEFT><FONT FACE="Tahoma, sans-serif"><FONT SIZE=3><SPAN LANG="en-GB"><SPAN STYLE="font-style: normal"><B>'_'
+	wild card </B></SPAN></SPAN></FONT></FONT><FONT FACE="Tahoma, sans-serif"><FONT SIZE=3><SPAN LANG="en-GB"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">is
+	used to point out that we don't exactly know (or we don't mind) the
+	value of any char of a string. So, if we want to retrieve all
+	registers whose age field is twenty-something, we only have to write
+	a consult such as </SPAN></SPAN></SPAN></FONT></FONT><FONT FACE="Tahoma, sans-serif"><FONT SIZE=3><SPAN LANG="en-GB"><I><SPAN STYLE="font-weight: normal">age=”2_”
+	</SPAN></I></SPAN></FONT></FONT><FONT FACE="Tahoma, sans-serif"><FONT SIZE=3><SPAN LANG="en-GB"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">and
+	it should return persons which age is 20,21,22,23,24,25,26,27,28 or
+	29. Note that if we want to point out the _ symbol not as a wild
+	card but as a real symbol (for example the string “last_name”)
+	we have to replace “_” by “\_” in the query.</SPAN></SPAN></SPAN></FONT></FONT></P>
+</UL>
+<P LANG="en-GB" ALIGN=LEFT STYLE="font-style: normal; font-weight: normal">
+<FONT FACE="Tahoma, sans-serif"><FONT SIZE=3>Some examples. Let's
+suppose the following data:</FONT></FONT></P>
+<TABLE WIDTH=100% BORDER=1 CELLPADDING=4 CELLSPACING=3 STYLE="page-break-inside: avoid">
+	<COL WIDTH=128*>
+	<COL WIDTH=128*>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P LANG="en-GB" ALIGN=CENTER><FONT FACE="Tahoma, sans-serif"><B>IDENTIFICATION</B></FONT></P>
+		</TD>
+		<TD WIDTH=50%>
+			<P LANG="en-GB" ALIGN=CENTER><FONT FACE="Tahoma, sans-serif"><B>DESCRIPTION</B></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P LANG="en-GB" ALIGN=LEFT><FONT FACE="Tahoma, sans-serif">AD_120_340</FONT></P>
+		</TD>
+		<TD WIDTH=50%>
+			<P LANG="en-GB" ALIGN=LEFT><FONT FACE="Tahoma, sans-serif">Percentage
+			is 76%</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P LANG="en-GB" ALIGN=LEFT><FONT FACE="Tahoma, sans-serif">AD_120_341</FONT></P>
+		</TD>
+		<TD WIDTH=50%>
+			<P LANG="en-GB" ALIGN=LEFT><FONT FACE="Tahoma, sans-serif">There
+			is no percentage</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P LANG="en-GB" ALIGN=LEFT><FONT FACE="Tahoma, sans-serif">AD_120_3412</FONT></P>
+		</TD>
+		<TD WIDTH=50%>
+			<P LANG="en-GB" ALIGN=LEFT><FONT FACE="Tahoma, sans-serif">Percentage
+			is still not proved but 95.9% is the most probably final value</FONT></P>
+		</TD>
+	</TR>
+</TABLE>
+<UL>
+	<LI><P ALIGN=LEFT><FONT FACE="Tahoma, sans-serif"><FONT SIZE=3><SPAN LANG="en-GB"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">We
+	want to know all registries whose description begins with
+	“Percentage”:<BR></SPAN></SPAN></SPAN></FONT></FONT><FONT FACE="Tahoma, sans-serif"><FONT SIZE=3><SPAN LANG="en-GB"><SPAN STYLE="font-style: normal"><B>Sentence:</B></SPAN></SPAN></FONT></FONT>
+	<FONT FACE="Tahoma, sans-serif"><FONT SIZE=3><SPAN LANG="en-GB"><I><SPAN STYLE="font-weight: normal">description=”percentage
+	%”</SPAN></I></SPAN></FONT></FONT><FONT FACE="Tahoma, sans-serif"><FONT SIZE=3><SPAN LANG="en-GB"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">.
+	This query will return:</SPAN></SPAN></SPAN></FONT></FONT></P>
+</UL>
+<TABLE WIDTH=100% BORDER=1 CELLPADDING=4 CELLSPACING=3 STYLE="page-break-inside: avoid">
+	<COL WIDTH=128*>
+	<COL WIDTH=128*>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P LANG="en-GB" ALIGN=CENTER><FONT FACE="Tahoma, sans-serif"><B>IDENTIFICATION</B></FONT></P>
+		</TD>
+		<TD WIDTH=50%>
+			<P LANG="en-GB" ALIGN=CENTER><FONT FACE="Tahoma, sans-serif"><B>DESCRIPTION</B></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P LANG="en-GB" ALIGN=LEFT><FONT FACE="Tahoma, sans-serif">AD_120_340</FONT></P>
+		</TD>
+		<TD WIDTH=50%>
+			<P LANG="en-GB" ALIGN=LEFT><FONT FACE="Tahoma, sans-serif">Percentage
+			is 76%</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P LANG="en-GB" ALIGN=LEFT><FONT FACE="Tahoma, sans-serif">AD_120_3412</FONT></P>
+		</TD>
+		<TD WIDTH=50%>
+			<P LANG="en-GB" ALIGN=LEFT><FONT FACE="Tahoma, sans-serif">Percentage
+			is still not proved but 95.9% is the most probably final value</FONT></P>
+		</TD>
+	</TR>
+</TABLE>
+<UL>
+	<LI><P ALIGN=LEFT><FONT FACE="Tahoma, sans-serif"><FONT SIZE=3><SPAN LANG="en-GB"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">We
+	want to know all registries which description contains a percentage
+	symbol:<BR></SPAN></SPAN></SPAN></FONT></FONT><FONT FACE="Tahoma, sans-serif"><FONT SIZE=3><SPAN LANG="en-GB"><SPAN STYLE="font-style: normal"><B>Sentence:</B></SPAN></SPAN></FONT></FONT>
+	<FONT FACE="Tahoma, sans-serif"><FONT SIZE=3><SPAN LANG="en-GB"><I><SPAN STYLE="font-weight: normal">description=”%\%%”.</SPAN></I></SPAN></FONT></FONT>
+	<FONT FACE="Tahoma, sans-serif"><FONT SIZE=3><SPAN LANG="en-GB"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">This
+	query will return:</SPAN></SPAN></SPAN></FONT></FONT></P>
+</UL>
+<TABLE WIDTH=100% BORDER=1 CELLPADDING=4 CELLSPACING=3 STYLE="page-break-inside: avoid">
+	<COL WIDTH=128*>
+	<COL WIDTH=128*>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P LANG="en-GB" ALIGN=CENTER><FONT FACE="Tahoma, sans-serif"><B>IDENTIFICATION</B></FONT></P>
+		</TD>
+		<TD WIDTH=50%>
+			<P LANG="en-GB" ALIGN=CENTER><FONT FACE="Tahoma, sans-serif"><B>DESCRIPTION</B></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P LANG="en-GB" ALIGN=LEFT><FONT FACE="Tahoma, sans-serif">AD_120_340</FONT></P>
+		</TD>
+		<TD WIDTH=50%>
+			<P LANG="en-GB" ALIGN=LEFT><FONT FACE="Tahoma, sans-serif">Percentage
+			is 76%</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P LANG="en-GB" ALIGN=LEFT><FONT FACE="Tahoma, sans-serif">AD_120_3412</FONT></P>
+		</TD>
+		<TD WIDTH=50%>
+			<P LANG="en-GB" ALIGN=LEFT><FONT FACE="Tahoma, sans-serif">Percentage
+			is still not proved but 95.9% is the most probably final value</FONT></P>
+		</TD>
+	</TR>
+</TABLE>
+<UL>
+	<LI><P><FONT FACE="Tahoma, sans-serif"><FONT SIZE=3><SPAN LANG="en-GB"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">We
+	want all registers we only know that its identification begins with
+	“AD_120_34” but we don't know its last number:<BR></SPAN></SPAN></SPAN></FONT></FONT><FONT FACE="Tahoma, sans-serif"><FONT SIZE=3><SPAN LANG="en-GB"><SPAN STYLE="font-style: normal"><B>Sentence:</B></SPAN></SPAN></FONT></FONT>
+	<FONT FACE="Tahoma, sans-serif"><FONT SIZE=3><SPAN LANG="en-GB"><I><SPAN STYLE="font-weight: normal">identification=”AD\_120\_34_”.</SPAN></I></SPAN></FONT></FONT>
+	<FONT FACE="Tahoma, sans-serif"><FONT SIZE=3><SPAN LANG="en-GB"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">This
+	will return:</SPAN></SPAN></SPAN></FONT></FONT></P>
+</UL>
+<TABLE WIDTH=100% BORDER=1 CELLPADDING=4 CELLSPACING=3 STYLE="page-break-inside: avoid">
+	<COL WIDTH=128*>
+	<COL WIDTH=128*>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P LANG="en-GB" ALIGN=CENTER><FONT FACE="Tahoma, sans-serif"><B>IDENTIFICATION</B></FONT></P>
+		</TD>
+		<TD WIDTH=50%>
+			<P LANG="en-GB" ALIGN=CENTER><FONT FACE="Tahoma, sans-serif"><B>DESCRIPTION</B></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P LANG="en-GB" ALIGN=LEFT><FONT FACE="Tahoma, sans-serif">AD_120_340</FONT></P>
+		</TD>
+		<TD WIDTH=50%>
+			<P LANG="en-GB" ALIGN=LEFT><FONT FACE="Tahoma, sans-serif">Percentage
+			is 76%</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P LANG="en-GB" ALIGN=LEFT><FONT FACE="Tahoma, sans-serif">AD_120_341</FONT></P>
+		</TD>
+		<TD WIDTH=50%>
+			<P LANG="en-GB" ALIGN=LEFT><FONT FACE="Tahoma, sans-serif">There
+			is no percentage</FONT></P>
+		</TD>
+	</TR>
+</TABLE>
+<P LANG="en-GB"><FONT FACE="Tahoma, sans-serif"><B>Note: if we would
+have written <I>identification=”AD\_120\_34%”,</I> <SPAN STYLE="font-style: normal">it
+had returned all registers.</SPAN></B></FONT></P>
+<UL>
+	<LI><P LANG="en-GB"><FONT FACE="Tahoma, sans-serif">Now, we want all
+	registers whose description field contains a percentage without
+	decimals, that is, a percentage with only two digits:<BR><B>Sentence:</B>
+	<I><SPAN STYLE="font-weight: normal">description=”% __\% %”.</SPAN></I>
+	<SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">This
+	will return:</SPAN></SPAN></FONT></P>
+</UL>
+<TABLE WIDTH=100% BORDER=1 CELLPADDING=4 CELLSPACING=3 STYLE="page-break-inside: avoid">
+	<COL WIDTH=128*>
+	<COL WIDTH=128*>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P LANG="en-GB" ALIGN=CENTER><FONT FACE="Tahoma, sans-serif"><B>IDENTIFICATION</B></FONT></P>
+		</TD>
+		<TD WIDTH=50%>
+			<P LANG="en-GB" ALIGN=CENTER><FONT FACE="Tahoma, sans-serif"><B>DESCRIPTION</B></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P LANG="en-GB" ALIGN=LEFT><FONT FACE="Tahoma, sans-serif">AD_120_340</FONT></P>
+		</TD>
+		<TD WIDTH=50%>
+			<P LANG="en-GB" ALIGN=LEFT><FONT FACE="Tahoma, sans-serif">Percentage
+			is 76%</FONT></P>
+		</TD>
+	</TR>
+</TABLE>
+<P><BR><BR>
+</P>
+</BODY>
+</HTML>
