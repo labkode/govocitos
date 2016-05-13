@@ -1,6 +1,6 @@
 Govocitos is a free software destinated to determine reproductive parameters in fish. It is able to estimate fertility and study the dynamics of development and oocyte recruitment of commercial fish quickly, easily and accurately. Knowledge of these parameters allows improving the assessment and fisheries management. Govocitos features an intuitive interface that easy to use.
 
-See more information about Govocitos at [http://lia.ei.uvigo.es/daeira/software/govocitos](http://lia.ei.uvigo.es/daeira/software/govocitos).
+See more information about Govocitos at  [http://lia.ei.uvigo.es/daeira/software/govocitos](http://lia.ei.uvigo.es/daeira/software/govocitos) and download the user guide at [http://lia.ei.uvigo.es/daeira/assets/doc/govocitos/GovocitosUserGuide.pdf](http://lia.ei.uvigo.es/daeira/assets/doc/govocitos/GovocitosUserGuide.pdf).
 
 # Setup
 This repository contains the Dockerfiles that start Govocitos's Web Application.
@@ -32,5 +32,4 @@ You should be able to see the login panel:
 Log into the service using the following credentials:
 
 - Guest account: `guest:guest`
-- Operator account: `operator:???`
-- Admin account: `admin:???`
+- Operator account: `operator:operador.14`
